@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1253</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ge Profile 3</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1211</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Uart</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_Conectar">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>210</y>
+        <width>161</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connect to Profile</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_bg_uart">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>160</width>
+        <height>160</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>520</y>
+        <width>151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <zorder>label_bg_uart</zorder>
+     <zorder>pushButton_Conectar</zorder>
+     <zorder>pushButton</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Data</string>
+     </attribute>
+     <widget class="QLineEdit" name="lineEdit_Dato">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>20</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Enviar">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>20</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SEND</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Enviados">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>510</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Transmitte</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Recibidos">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>510</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Receive</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Enviados">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>530</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Recibidos">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>529</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="maxLength">
+       <number>32766</number>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>150</y>
+        <width>501</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Debug</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="lineEdit_receive_data">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>1181</width>
+        <height>321</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_reset">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>90</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RESET</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_log">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>90</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START LOG</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_bg_data">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>160</width>
+        <height>160</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_exit">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>560</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_clear_screen">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>560</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear Screen</string>
+      </property>
+     </widget>
+     <zorder>label_bg_data</zorder>
+     <zorder>lineEdit_Dato</zorder>
+     <zorder>pushButton_Enviar</zorder>
+     <zorder>label_Enviados</zorder>
+     <zorder>label_Recibidos</zorder>
+     <zorder>lineEdit_Enviados</zorder>
+     <zorder>lineEdit_Recibidos</zorder>
+     <zorder>label</zorder>
+     <zorder>lineEdit_receive_data</zorder>
+     <zorder>pushButton_reset</zorder>
+     <zorder>pushButton_log</zorder>
+     <zorder>pushButton_clear_screen</zorder>
+     <zorder>pushButton_exit</zorder>
+     <zorder>pushButton_exit</zorder>
+     <zorder>pushButton_clear_screen</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1253</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpen_log">
+    <property name="title">
+     <string>open log</string>
+    </property>
+    <addaction name="actionFile"/>
+   </widget>
+   <addaction name="menuOpen_log"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionFile">
+   <property name="text">
+    <string>file</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
